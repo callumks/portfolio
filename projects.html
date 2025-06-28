@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Callum Stoddart</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark">
+    <div class="resume-container">
+      <!-- Header -->
+      <header class="page-header">
+        <div class="header-content">
+          <div class="header-info">
+            <img
+              src="images/183532553.jpeg"
+              alt="Callum Stoddart"
+              class="profile-image"
+            />
+            <div class="header-text">
+              <h1>Callum Stoddart</h1>
+              <h2>Fullstack Dev and Student</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="header-nav">
+          <div class="nav-dropdown">
+            <span class="nav-trigger">Projects</span>
+            <div class="nav-dropdown-content" id="navDropdown">
+              <a href="index.html" class="nav-item">About</a>
+              <a href="experience.html" class="nav-item">Experience</a>
+              <a href="skills.html" class="nav-item">Skills</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <!-- Bio stays in sidebar -->
+          <div class="sidebar-section about">
+            <p>
+              A passionate fullstack developer and student, I love building
+              meaningful applications and creating seamless user experiences.
+              Always learning, always growing.
+            </p>
+          </div>
+          <!-- Contact info stays in sidebar -->
+          <div class="sidebar-section contact">
+            <div class="contact-item">
+              <a href="mailto:callumksx@gmail.com">callumksx@gmail.com</a>
+            </div>
+            <div class="contact-item"><a href="#">LinkedIn</a></div>
+            <div class="contact-item"><a href="#">GitHub</a></div>
+            <div class="contact-item"><a href="#">Portfolio</a></div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section class="section projects">
+          <h3 class="section-title">Projects</h3>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-content">
+                <h3>
+                  <a href="#" class="project-title">Personal Finance Tracker</a>
+                </h3>
+                <p>
+                  A full-stack web application for tracking expenses and
+                  managing budgets. Features real-time data visualization and
+                  secure user authentication.
+                </p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                  <span>Chart.js</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-content">
+                <h3>
+                  <a href="#" class="project-title">E-Commerce Platform</a>
+                </h3>
+                <p>
+                  Modern e-commerce site with shopping cart functionality,
+                  payment integration, and responsive design. Built with
+                  performance and user experience in mind.
+                </p>
+                <div class="project-tech">
+                  <span>Next.js</span>
+                  <span>Stripe API</span>
+                  <span>CSS Modules</span>
+                  <span>Vercel</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-content">
+                <h3>
+                  <a href="#" class="project-title">Task Management App</a>
+                </h3>
+                <p>
+                  Collaborative task management application with real-time
+                  updates, drag-and-drop functionality, and team collaboration
+                  features.
+                </p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Express</span>
+                  <span>Socket.io</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      &#8593;
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
