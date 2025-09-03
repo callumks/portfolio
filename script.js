@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initSmoothScrolling();
   initContactForm();
   initSmoothPageTransitions();
+  initLinksOpenNewTab();
 
   // Add smooth initial page load
   const mainContent = document.querySelector(".main-content");
@@ -183,6 +184,23 @@ function initSmoothScrolling() {
         });
       }
     });
+  });
+}
+
+// Open non-anchor links in a new tab (with security best practices)
+function initLinksOpenNewTab() {
+  const links = document.querySelectorAll("a[href]");
+  links.forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    const isAnchor = href.startsWith("#");
+    const isMailto = href.startsWith("mailto:");
+    const isTel = href.startsWith("tel:");
+    const hasDownload = link.hasAttribute("download");
+
+    if (!isAnchor && !isMailto && !isTel && !hasDownload) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    }
   });
 }
 
