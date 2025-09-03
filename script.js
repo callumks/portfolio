@@ -377,6 +377,12 @@ function initSmoothPageTransitions() {
   // Handle navigation clicks
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
+      // If link is intended to open in a new tab, let the browser handle it
+      const targetAttr = this.getAttribute("target");
+      if (targetAttr === "_blank") {
+        return;
+      }
+
       e.preventDefault();
 
       const targetUrl = this.getAttribute("href");
@@ -480,6 +486,7 @@ async function transitionToPage(url, pushState = true) {
         // Re-initialize any necessary scripts for the new content
         initScrollAnimations();
         initSkillBars();
+        initLinksOpenNewTab();
 
         // Clean up loading states
         setTimeout(() => {
