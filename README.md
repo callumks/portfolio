@@ -4,14 +4,14 @@ A clean, modern, and responsive personal resume website built with HTML, CSS, an
 
 ## Features
 
-- ✨ **Modern Design**: Clean and professional layout with smooth animations
-- 📱 **Fully Responsive**: Works perfectly on all devices and screen sizes
-- 🎯 **Smooth Scrolling**: Seamless navigation between sections
-- 🔝 **Back to Top Button**: Dynamic button that appears when scrolling
-- 📊 **Animated Skill Bars**: Visual representation of your skills with smooth animations
-- 🎨 **Interactive Elements**: Hover effects and transitions throughout
-- 📝 **Contact Form**: Functional contact form with validation
-- 🌙 **Professional Color Scheme**: Modern gradient backgrounds and consistent styling
+-  **Modern Design**: Clean and professional layout with smooth animations
+-  **Fully Responsive**: Works perfectly on all devices and screen sizes
+-  **Smooth Scrolling**: Seamless navigation between sections
+-  **Back to Top Button**: Dynamic button that appears when scrolling
+-  **Animated Skill Bars**: Visual representation of your skills with smooth animations
+-  **Interactive Elements**: Hover effects and transitions throughout
+-  **Contact Form**: Functional contact form with validation
+-  **Professional Color Scheme**: Modern gradient backgrounds and consistent styling
 
 ## Sections
 
