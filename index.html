@@ -60,8 +60,8 @@
   h1 > span > span { display: block; }
   .hero-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px 48px; margin-top: clamp(28px, 5vh, 56px); }
   .recent { display: flex; align-items: baseline; gap: .35em; font: 500 clamp(22px, 2.6vw, 36px)/1.1 var(--display); letter-spacing: -.03em; }
-  .recent .window { display: inline-block; height: 1.15em; overflow: hidden; vertical-align: bottom; }
-  .recent .words { display: flex; flex-direction: column; line-height: 1.15em; }
+  .recent .window { display: inline-block; height: 1.5em; margin: -.2em 0; overflow: hidden; vertical-align: bottom; }
+  .recent .words { display: flex; flex-direction: column; line-height: 1.5em; } /* room for descenders, so the g in fargone doesn't peek into the next word */
 
   /* work */
   .work { padding: clamp(80px, 14vh, 160px) 0; scroll-margin-top: calc(90px - clamp(80px, 14vh, 160px)); }
@@ -143,7 +143,7 @@
   <section class="hero">
     <h1><span><span data-line>I build products</span></span><span><span data-line>end to end.</span></span></h1>
     <div class="hero-foot" data-fade>
-      <div class="recent"><span class="muted">Most recently</span><span class="window"><span class="words"><span>Atcha.</span><span>Crahg.</span><span>fargone.</span><span>raffa.fun.</span><span>Callsheet.</span><span>DAW Connect.</span><span aria-hidden="true">Atcha.</span></span></span></div>
+      <div class="recent"><span class="muted">Most recently</span><span class="window"><span class="words"><span>fargone.</span><span>Atcha.</span><span>Crahg.</span><span>raffa.fun.</span><span>Callsheet.</span><span>DAW Connect.</span><span aria-hidden="true">fargone.</span></span></span></div>
       <p class="muted pretty">Usually on my own, from the first sketch to paying users. Based in London.</p>
     </div>
   </section>
@@ -244,7 +244,7 @@
   if (!still) setInterval(() => {
     const n = words.children.length - 1; wi++;
     words.style.transition = 'transform .7s cubic-bezier(.76,0,.24,1)';
-    words.style.transform = `translateY(${-wi * 1.15}em)`;
+    words.style.transform = `translateY(${-wi * 1.5}em)`;
     if (wi === n) setTimeout(() => { words.style.transition = 'none'; words.style.transform = 'none'; wi = 0; }, 760);
   }, 2400);
 
