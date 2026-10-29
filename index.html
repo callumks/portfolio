@@ -158,7 +158,7 @@
         <a class="row" href="https://fargone.cc" target="_blank" rel="noopener"><span><span class="title">fargone</span><span class="status live">Community</span></span><span class="muted">A climbing community brand I founded</span></a>
         <a class="row" href="https://www.raffa.fun" target="_blank" rel="noopener"><span><span class="title">raffa.fun</span><span class="status">Paused</span></span><span class="muted">Raffle platform, built and run solo</span></a>
         <a class="row" href="https://github.com/callumks/callsheet" target="_blank" rel="noopener"><span><span class="title">Callsheet</span><span class="status">Personal</span></span><span class="muted">My modelling bookings, read from my inbox</span></a>
-        <a class="row" href="https://site-production-a05d.up.railway.app" target="_blank" rel="noopener"><span><span class="title">DAW Connect</span><span class="status">Personal</span></span><span class="muted">Ableton sets into Logic, with nothing left behind</span></a>
+        <a class="row" href="https://site-production-a05d.up.railway.app" target="_blank" rel="noopener"><span><span class="title">DAW Connect</span><span class="status">Personal</span></span><span class="muted">Your Live set in Logic, sounding the same</span></a>
       </div>
       <div class="viewer">
         <div class="captions">
@@ -175,7 +175,7 @@
           <div class="pane"><span>fargone.cc</span><img alt="fargone homepage" data-src="fargone.cc"></div>
           <div class="pane"><span>raffa.fun</span><img alt="raffa.fun homepage" data-src="www.raffa.fun"></div>
           <div class="pane phones"><span class="phone"><img class="light" src="images/callsheet/upcoming-light.png" alt="Callsheet upcoming screen" loading="lazy"><img class="dark" src="images/callsheet/upcoming-dark.png" alt="" loading="lazy"></span><span class="phone"><img class="light" src="images/callsheet/job-light.png" alt="Callsheet job screen" loading="lazy"><img class="dark" src="images/callsheet/job-dark.png" alt="" loading="lazy"></span><span class="phone"><img class="light" src="images/callsheet/earnings-light.png" alt="Callsheet earnings screen" loading="lazy"><img class="dark" src="images/callsheet/earnings-dark.png" alt="" loading="lazy"></span></div>
-          <div class="pane"><span>DAW Connect</span><img alt="DAW Connect homepage" data-src="site-production-a05d.up.railway.app"></div>
+          <div class="pane"><span>DAW Connect</span><img alt="DAW Connect homepage" data-src="images/shots/daw-connect.jpg"></div>
         </a>
       </div>
     </div>
@@ -250,7 +250,7 @@
 
   // work viewer
   const rows = $$('.row'), hl = $('.hl'), frame = $('.frame'), panes = $$('.pane'), captions = $$('.caption');
-  const shot = host => `https://api.microlink.io/?url=${encodeURIComponent('https://' + host)}&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1440&viewport.height=900`;
+  const shot = host => host.startsWith('images/') ? host : `https://api.microlink.io/?url=${encodeURIComponent('https://' + host)}&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1440&viewport.height=900`;
   // on phones there's no hover, so each row gets its own screenshot and caption
   if (matchMedia('(hover: none), (max-width: 760px)').matches) rows.forEach((r, i) => {
     const thumb = document.createElement('span');
